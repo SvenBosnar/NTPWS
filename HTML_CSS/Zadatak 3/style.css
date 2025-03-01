@@ -1,0 +1,96 @@
+
+body, html {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/28746217.jpg"); 
+    background-size: cover;         
+    background-position: center;    
+    background-attachment: fixed;   
+    background-repeat: no-repeat;  
+}
+
+
+.site-header {
+    background-image: url("img/Banner.jpg");
+    background-size:cover;       
+    background-repeat:no-repeat; 
+    height: 150px;                
+    display: flex;                
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.main-nav {
+    display: flex;
+    gap: 15px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; 
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(190, 198, 234, 0.8);
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+}
+
+/* Footer stil */
+.site-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .main-nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .site-header {
+        height: 200px; /* Manji banner za mobilne uređaje */
+    }
+}
+
+/* Stil za slike */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ove vrijednosti osiguravaju da slika bude responzivna */
+}
+
